@@ -7,7 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC65LHe7_834Sa7LCDVVF1y9od1Cy9WhtI",
+  apiKey: "enter api key here",
   authDomain: "uniflix-e0e36.firebaseapp.com",
   projectId: "uniflix-e0e36",
   storageBucket: "uniflix-e0e36.appspot.com",
