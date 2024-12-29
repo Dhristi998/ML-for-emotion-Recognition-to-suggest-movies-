@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UniFLix Login</title>
+  <link rel = "stylesheet" href = "./sign.css">
+  <link rel="icon" href="icons/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://kit.fontawesome.com/7331d8ff14.js"></script>
+ 
+</head>
+<body ng-app="myApp" ng-controller="myCtrl" ng-click="active">
+    
+    <div class="blob" id="blob" onclick="closeMenu()"></div>
+    <div id = "blob"></div>
+  <div class = "login-container">
+    <div id= "main">
+      <h1>Sign In</h1>
+      <input  id = "email" type = "text" placeholder = "Email"></input>
+      <input id = "password" type = "password" placeholder = "Password"></input>
+      <button id = "submit">Submit</button>
+      <p><span>or</span></p>
+      <button id = "sign-up">Sign Up</button>
+    </div>
+
+    <div id = "create-acct">
+      <h1>Create an Account</h1>
+      <input id = "email-signup" type = "text" placeholder = "Email *"></input>
+  <input id = "confirm-email-signup" type = "email" placeholder = "Confirm Email *"></input>
+      <input id = "password-signup" type = "password" placeholder = "Password *"></input>
+      <input id = "confirm-password-signup" type = "password" placeholder = "Confirm Password *"></input>
+      <button id = "create-acct-btn">Create Account</button>
+      <button id = "return-btn">Return to Login</button>
+    </div>
+  </div>
+  <div class="smedia">
+    <ul class="ul2">
+        <li class="li2">
+            <a class="a2" href="https://twitter.com" target="_blank">
+                <span class="span2">
+                    <i class="fa-brands fa-twitter"></i>
+                </span>
+            </a>
+        </li>
+        <li class="li2">
+            <a class="a2" href="https://facebook.com" target="_blank">
+                <span class="span2">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+            </a>
+        </li>
+        <li class="li2">
+            <a class="a2" href="https://linkedin.com" target="_blank">
+                <span class="span2">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+            </a>
+        </li>
+        <li class="li2">
+            <a class="a2" href="https://instagram.com" target="_blank">
+                <span class="span2">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+            </a>
+        </li>
+        <li class="li2">
+            <a class="a2" href="https://youtube.com" target="_blank">
+                <span class="span2">
+                    <i class="fa-brands fa-youtube"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+  <script type = "module" src = "./auth.js"></script>
+</body>
+</html>

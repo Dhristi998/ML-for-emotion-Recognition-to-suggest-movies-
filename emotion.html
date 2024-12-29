@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Result</title>
+    <link rel="stylesheet" href="emotion.css">
+</head>
+<body>
+    <h1 id="result"></h1>
+    <div id ="div">
+        <button class="center-button" id="redirect-button">View Movies</button>
+    </div>
+
+    <script>
+        document.getElementById('redirect-button').addEventListener('click', function() {
+            window.location.href = 'movielist.html';
+        });
+        </script>
+
+        <script>
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const emotion = urlParams.get('emotion');
+        const genre = urlParams.get('genre');
+
+        document.getElementById('result').textContent = `You look like you are feeling ${emotion}. I suggest the genre: ${genre}.`;
+    </script>
+</body>
+</html>

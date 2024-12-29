@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodrama</title>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="mood.js"></script>
+    <link rel="stylesheet" href="moodDetector.css">
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden; /* Prevent scrollbars */
+            color: antiquewhite;
+        }
+        canvas {
+            position: absolute;
+        }
+        video {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 70vh; /* Limit height to prevent overflow */
+            border-radius: 0.5rem; /* Optional: for rounded corners */
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 0.4rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background: hsl(181, 100%, 44%, 0.8);
+            transition: 0.3s all linear; 
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px; /* Space between header and video */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Place your head in the centre of the frame!</h1>
+    </header>
+    <div>
+        <video id="video" autoplay muted></video>
+    </div>
+    <div>
+        <button id="captureBtn">Capture Emotion</button>
+    </div>
+</body>
+</html>
